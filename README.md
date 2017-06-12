@@ -13,7 +13,7 @@ The dataset being used is: [Human Activity Recognition Using Samsung GalaxyS Sma
 
 `CodeBook.md` describes the variables, the data, and any transformations or work that was performed to clean up the data.
 
-`run_analysis.R` contains all the code to perform the analyses described in the 5 steps. This can be launched in RStudio by just importing the file.
+`run_analysis.R` contains all the code to perform the analysis described in the 5 steps. This can be launched in RStudio by just importing the file.
 
 The output of the 5th step of the course project work is called `tidydata.txt`.
 ## Summary
