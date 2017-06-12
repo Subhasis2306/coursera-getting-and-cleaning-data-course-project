@@ -222,7 +222,7 @@ The following transformations were applied to the source data:
 1. The training and test sets were merged to create one data set.
 1. The measurements on the mean and standard deviation (i.e. signals containing the strings `mean` and `std`) were extracted for each measurement, and the others were discarded.
 1. The activity identifiers (originally coded as integers between 1 and 6) were replaced with descriptive activity names (see [Identifiers](#identifiers) section).
-1. The variable names were replaced with descriptive variable names (e.g. `tBodyAcc-mean()-X` was expanded to `timeDomainBodyAccelerometerMeanX`), using the following set of rules:
+1. The variable names were replaced with descriptive variable names (e.g. `tBodyAcc-mean()-X` was modified to `tBodyAccMeanX`), using the following set of rules:
 	- Special characters (i.e. `(`, `)`, and `-`) were removed
 	- `mean` and `std` were replaced with `Mean` and `Std` respectively.
 	
