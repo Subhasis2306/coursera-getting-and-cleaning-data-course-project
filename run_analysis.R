@@ -20,8 +20,8 @@ features <- read.table("UCI HAR Dataset/features.txt", stringsAsFactors = FALSE)
 # Extract only the data on mean and standard deviation from features
 featuresWanted <- grep(".*mean.*|.*std.*", features[,2])
 featuresWanted.names <- features[featuresWanted,2]
-featuresWanted.names = gsub('-mean', 'Mean', featuresWanted.names)
-featuresWanted.names = gsub('-std', 'Std', featuresWanted.names)
+featuresWanted.names <- gsub('-mean', 'Mean', featuresWanted.names)
+featuresWanted.names <- gsub('-std', 'Std', featuresWanted.names)
 featuresWanted.names <- gsub('[-()]', '', featuresWanted.names)
 
 
