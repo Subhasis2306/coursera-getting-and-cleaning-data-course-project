@@ -224,9 +224,8 @@ The following transformations were applied to the source data:
 1. The activity identifiers (originally coded as integers between 1 and 6) were replaced with descriptive activity names (see [Identifiers](#identifiers) section).
 1. The variable names were replaced with descriptive variable names (e.g. `tBodyAcc-mean()-X` was expanded to `timeDomainBodyAccelerometerMeanX`), using the following set of rules:
 	- Special characters (i.e. `(`, `)`, and `-`) were removed
-	- The initial `f` and `t` were expanded to `frequencyDomain` and `timeDomain` respectively.
-	- `Acc`, `Gyro`, `Mag`, `Freq`, `mean`, and `std` were replaced with `Accelerometer`, `Gyroscope`, `Magnitude`, `Frequency`, `Mean`, and `StandardDeviation` respectively.
-	- Replaced (supposedly incorrect as per source's `features_info.txt` file) `BodyBody` with `Body`.
+	- `mean` and `std` were replaced with `Mean` and `Std` respectively.
+	
 1. From the data set in step 4, the final data set was created with the average of each variable for each activity and each subject.
 
 The collection of the source data and the transformations listed above were implemented by the `run_analysis.R` R script (see `README.md` file for usage instructions).
